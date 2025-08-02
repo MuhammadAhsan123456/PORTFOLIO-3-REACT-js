@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { motion } from 'framer-motion';
 import ResumeCard from './ResumeCard';
 
@@ -9,63 +9,57 @@ const Education = () => {
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
       className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
     >
-      {/* part one */}
+      {/* Education Section */}
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">1998 - 2010</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Education Quality</h2>
+          <p className="text-sm text-designColor tracking-[4px]">2024 - 2025</p>
+          <h2 className="text-3xl md:text-4xl font-bold">Education</h2>
         </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+        <div className="mt-6 lgl:mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            title="BSc in Computer Science"
-            subTitle="University of DVI (2006 - 2010)"
-            result="3.90/4"
-            des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
+            title="Intermediate in Computer Science"
+            subTitle="Pakistan Shipowner Colleges (2024 - 2025)"
+            result="3.8/4"
+            des="Studied fundamental subjects of computer science including programming, web development, and basic networking."
           />
           <ResumeCard
-            title="AS - Science & Information"
-            subTitle="SuperKing College (2001 - 2005)"
-            result="4.75/5"
-            des="Higher education is tertiary education leading to award of an academic degree. Higher education, also called post-secondary education."
-          />
-          <ResumeCard
-            title="Secondary School Education"
-            subTitle="Kingstar Secondary School (1998 - 2000)"
-            result="5.00/5"
-            des="Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale."
+            title="Matriculation - Science"
+            subTitle="Kamran Grammer School (2022 - 2023)"
+            result="A+1 Grade"
+            des="Completed matriculation with science subjects including Physics, Chemistry, and Computer Science."
           />
         </div>
       </div>
-      {/* part Two */}
 
+      {/* Experience Section (optional, simplified) */}
       <div>
-        <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Job Experience</h2>
-        </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCard
-            title="Sr. Software Engineer"
-            subTitle="Google Out Tech - (2017 - Present)"
-            result="USA"
-            des="Google's hiring process is an important part of our culture. Googlers care deeply about their teams and the people who make them up."
-          />
-          <ResumeCard
-            title="Web Developer & Trainer"
-            subTitle="Apple Developer Team - (2012 - 2016)"
-            result="MALAYSIA"
-            des="A popular destination with a growing number of highly qualified homegrown graduates, it's true that securing a role in Malaysia isn't easy."
-          />
-          <ResumeCard
-            title="Front-end Developer"
-            subTitle="Nike - (2020 - 2011)"
-            result="Oman"
-            des="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
-          />
-        </div>
-      </div>
+  <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
+    <p className="text-sm text-designColor tracking-[4px]">2024 - Present</p>
+    <h2 className="text-3xl md:text-4xl font-bold">Experience</h2>
+  </div>
+  <div className="mt-6 lgl:mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+
+    {/* Student at SMIT */}
+    <ResumeCard
+      title="Web & Mobile App Development - Student"
+      subTitle="Saylani Mass IT Training (SMIT) - (2024 - Present)"
+      result="Karachi"
+      des="Currently enrolled in SMIT's development program. Learning full-stack development including HTML, CSS, JavaScript, React, and backend fundamentals."
+    />
+
+      {/* Junior Front-End Developer */}
+    <ResumeCard
+      title="Junior Front-End Developer"
+      subTitle="Personal Projects & Practice (2024 - Present)"
+      result="Remote"
+      des="Working on real-world projects using React.js, Tailwind CSS, and JavaScript. Focused on building responsive UIs, API integrations, and reusable components."
+    />
+
+  </div>
+</div>
+
     </motion.div>
   );
-}
+};
 
-export default Education
+export default Education;

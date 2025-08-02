@@ -1,12 +1,20 @@
-import React from 'react'
+import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import {logo} from "../../assets/index"
+// import {logo} from "../../assets/index"
 
 const Footer = () => {
   return (
     <div className="w-full py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-4 gap-8">
       <div className="w-full h-full flex flex-col gap-8">
-        <img className="w-32" src={logo} alt="logo" />
+        <div className="flex items-center gap-4">
+          <img
+            className="w-24 h-24 rounded-full object-cover"
+            src="https://t4.ftcdn.net/jpg/09/64/89/17/360_F_964891760_h0DymPvgJ0dZtcdWLts0qQIrk9fKWpjG.jpg"
+            alt="logo"
+          />
+          <h3 className="text-2xl font-semibold cursor-pointer text-designColor">Md Ahsan</h3>
+        </div>
+
         <div className="flex gap-4">
           <span className="bannerIcon">
             <FaFacebookF />
@@ -20,7 +28,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full h-full">
-        <h3 className="text-xl uppercase text-designColor tracking-wider">
+        <h3 className="text-xl uppercase text-designColor tracking-widercursor-pointer">
           Quick Link
         </h3>
         <ul className="flex flex-col gap-4 font-titleFont font-medium py-6 overflow-hidden">
@@ -57,7 +65,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="w-full h-full">
-        <h3 className="text-xl uppercase text-designColor tracking-wider">
+        <h3 className="text-xl uppercase text-designColor tracking-wider cursor-pointer">
           RESOURCES
         </h3>
         <ul className="flex flex-col gap-4 font-titleFont font-medium py-6 overflow-hidden">
@@ -94,7 +102,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="w-full h-full">
-        <h3 className="text-xl uppercase text-designColor tracking-wider">
+        <h3 className="text-xl uppercase text-designColor tracking-wider cursor-pointer">
           DEVELOPERS
         </h3>
         <ul className="flex flex-col gap-4 font-titleFont font-medium overflow-hidden py-6">
@@ -132,6 +140,6 @@ const Footer = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;
