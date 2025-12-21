@@ -16,15 +16,31 @@ const Footer = () => {
         </div>
 
         <div className="flex gap-4">
-          <span className="bannerIcon">
-            <FaFacebookF />
-          </span>
-          <span className="bannerIcon">
-            <FaTwitter />
-          </span>
-          <span className="bannerIcon">
-            <FaLinkedinIn />
-          </span>
+          <a href="https://www.facebook.com/profile.php?id=61576288364415 " target="_blank" rel="noopener noreferrer">
+            <span className="bannerIcon">
+              <FaFacebookF />
+            </span>
+          </a>
+          <a
+            href="https://www.twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bannerIcon"
+          >
+            <span className="bannerIcon">
+              <FaTwitter />
+            </span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/muhammad-ahsan-b204b8357"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bannerIcon"
+          >
+            <span className="bannerIcon">
+              <FaLinkedinIn />
+            </span>
+          </a>
         </div>
       </div>
       <div className="w-full h-full">
