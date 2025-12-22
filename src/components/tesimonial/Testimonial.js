@@ -112,7 +112,7 @@ import Slider from "react-slick";
 import { RiStarFill } from "react-icons/ri";
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import Title from "../layouts/Title";
-import { quote } from "../../assets";
+import { ahsanprofile, quote } from "../../assets";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -191,9 +191,9 @@ const Testimonial = () => {
               <div className="flex flex-col lgl:flex-row items-center gap-8 bg-gradient-to-r from-[#1e2024] to-[#23272b] p-6 rounded-xl shadow-lg">
                 {/* Left side (Image & Name) */}
                 <div className="flex flex-col items-center text-center lgl:w-1/3">
-                  <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-designColor flex items-center justify-center">
+                  <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-black flex items-center justify-center">
                     <img
-                      src="https://t4.ftcdn.net/jpg/09/64/89/17/360_F_964891760_h0DymPvgJ0dZtcdWLts0qQIrk9fKWpjG.jpg"
+                      src={ahsanprofile}
                       alt="Muhammad Ahsan"
                       className="w-full h-full object-cover"
                     />
