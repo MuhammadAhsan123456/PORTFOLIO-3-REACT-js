@@ -7,7 +7,7 @@ export default function ActionButtons() {
   const [copied, setCopied] = useState(false);
   const [open, setOpen] = useState(false);
 
-  const email = "ahsan@email.com"; // 👈 apni email
+  const email = "ahsan663399@email.com"; // 👈 apni email
 
   const copyEmail = async () => {
     await navigator.clipboard.writeText(email);
