@@ -1,9 +1,9 @@
 import React from 'react'
-import { bannerImg, bannertwo } from "../../assets/index";
+import { bannertwo } from "../../assets/index";
 
 const RightBanner = () => {
   return (
-    <div className="w-full lgl:w-1/2 flex justify-center items-center relative">
+    <div className="w-full lgl:w-1/2 flex justify-end items-center relative">
       <img
         className="w-[300px] h-[200px] lgl:w-[500px] lgl:h-[480px] z-10 rounded-2xl"
         src={bannertwo}
